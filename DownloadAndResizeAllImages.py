@@ -10,7 +10,7 @@ from PIL import Image, ImageOps
 # =======================
 # Configuration
 # =======================
-INPUT_CSV = "csv/all_viet_species_keys.csv"        # CSV file with column 'speciesKey'
+INPUT_CSV = "csv/4799_species_keys.csv"        # CSV file with column 'speciesKey'
 OUTPUT_DIR = "all_viet_species"
 MAX_IMAGES = 130
 CONCURRENT_SPECIES = 1
