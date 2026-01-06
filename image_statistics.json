@@ -1,0 +1,30 @@
+{
+  "total_images": 310647,
+  "total_species_with_images": 3570,
+  "avg_images_per_species": 87.01596638655462,
+  "total_size_gb": 1.1869378369301558,
+  "by_kingdom": {
+    "Plantae": {
+      "species": 3450,
+      "images": 297320
+    },
+    "Bacteria": {
+      "species": 3,
+      "images": 176
+    },
+    "Fungi": {
+      "species": 112,
+      "images": 12675
+    },
+    "Chromista": {
+      "species": 5,
+      "images": 476
+    }
+  },
+  "image_formats": {
+    "JPEG": 17103
+  },
+  "avg_width": 497,
+  "avg_height": 539,
+  "avg_megapixels": 0.2625785365725311
+}
