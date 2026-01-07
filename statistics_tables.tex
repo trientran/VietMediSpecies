@@ -1,0 +1,107 @@
+% ========================================================================
+% TABLE: Kingdom Coverage (Already in your Table 2)
+% ========================================================================
+% This data is already in Table 2 of your paper
+
+% ========================================================================
+% TABLE 3: Top 10 Families by Species Count
+% ========================================================================
+
+\begin{table}[t]
+\centering
+\caption{Top 10 Plant Families by Species Count with Vietnamese Name Coverage}
+\label{tab:top_families}
+\begin{tabular}{lrrr}
+\toprule
+\textbf{Family} & \textbf{Species} & \textbf{Viet Names} & \textbf{Coverage} \\
+\midrule
+Fabaceae & 372 & 303 & 81\% \\
+Asteraceae & 242 & 195 & 81\% \\
+Lamiaceae & 157 & 147 & 94\% \\
+Rubiaceae & 154 & 122 & 79\% \\
+Apocynaceae & 148 & 128 & 86\% \\
+Orchidaceae & 125 & 110 & 88\% \\
+Euphorbiaceae & 117 & 110 & 94\% \\
+Poaceae & 110 & 106 & 96\% \\
+Malvaceae & 98 & 89 & 91\% \\
+Acanthaceae & 76 & 65 & 86\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% ========================================================================
+% TABLE 4: Image Distribution Statistics
+% ========================================================================
+
+\begin{table}[t]
+\centering
+\caption{Image Distribution Across Species}
+\label{tab:image_distribution}
+\begin{tabular}{lr}
+\toprule
+\textbf{Metric} & \textbf{Value} \\
+\midrule
+Total images & 310,647 \\
+Species with images & 3,570 \\
+Average images/species & 87 \\
+Median images/species & 35 \\
+Maximum images/species & 130 \\
+Minimum images/species & 1 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% ========================================================================
+% TABLE 5: Taxonomic Diversity
+% ========================================================================
+
+\begin{table}[t]
+\centering
+\caption{Taxonomic Diversity Across Classification Ranks}
+\label{tab:taxonomic_diversity}
+\begin{tabular}{lr}
+\toprule
+\textbf{Taxonomic Rank} & \textbf{Count} \\
+\midrule
+Kingdoms & 4 \\
+Phyla & 9 \\
+Classes & 24 \\
+Orders & 112 \\
+Families & 355 \\
+Genera & 1,896 \\
+Species & 4,799 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% ========================================================================
+% BONUS: Combined Statistics Table (Use this if you want ONE table)
+% ========================================================================
+
+\begin{table*}[t]
+\centering
+\caption{Comprehensive Dataset Statistics}
+\label{tab:comprehensive_stats}
+\begin{tabular}{llr}
+\toprule
+\textbf{Category} & \textbf{Metric} & \textbf{Value} \\
+\midrule
+\multirow{3}{*}{Images} & Total images & 310,647 \\
+ & Species with images & 3,570 (74\%) \\
+ & Average images per species & 87 \\
+\midrule
+\multirow{3}{*}{Vietnamese Names} & Species with Vietnamese names & 4,031 (84\%) \\
+ & Manual curation time & 320+ hours \\
+ & Estimated error rate & 3.5\% \\
+\midrule
+\multirow{3}{*}{Taxonomic Diversity} & Families & 355 \\
+ & Genera & 1,896 \\
+ & Species & 4,799 \\
+\midrule
+\multirow{4}{*}{Kingdom Coverage} & Plantae & 3,950/4,667 (85\%) \\
+ & Fungi & 72/120 (60\%) \\
+ & Chromista & 6/9 (67\%) \\
+ & Bacteria & 3/3 (100\%) \\
+\bottomrule
+\end{tabular}
+\end{table*}
