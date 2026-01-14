@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ee9a79d7-ed0e-4658-8d39-8bc5c92cca63" name="Changes" comment="Init">
-      <change afterPath="$PROJECT_DIR$/Chart_WebConf_Pipeline.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/calculate_statistics.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/generate_statistics_figure_pycharm.py" afterDir="false" />
+    <list default="true" id="ee9a79d7-ed0e-4658-8d39-8bc5c92cca63" name="Changes" comment="WebConf2026 statistics and charts generating">
+      <change afterPath="$PROJECT_DIR$/ggg.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +59,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "feature/update",
-    "last_opened_file_path": "/Users/trien.tran/PycharmProjects/PlantClef"
+    "last_opened_file_path": "/Users/trien.tran/PycharmProjects/PlantClef",
+    "settings.editor.selected.configurable": "advanced.settings"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -95,7 +95,23 @@
       <option name="project" value="LOCAL" />
       <updated>1752654000586</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="WebConf2026 statistics and charts generating">
+      <option name="closed" value="true" />
+      <created>1767777223268</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1767777223268</updated>
+    </task>
+    <task id="LOCAL-00003" summary="WebConf2026 statistics and charts generating">
+      <option name="closed" value="true" />
+      <created>1767777227428</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1767777227428</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -123,6 +139,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Init" />
-    <option name="LAST_COMMIT_MESSAGE" value="Init" />
+    <MESSAGE value="WebConf2026 statistics and charts generating" />
+    <option name="LAST_COMMIT_MESSAGE" value="WebConf2026 statistics and charts generating" />
   </component>
 </project>
