@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ee9a79d7-ed0e-4658-8d39-8bc5c92cca63" name="Changes" comment="WebConf2026 statistics and charts generating">
-      <change afterPath="$PROJECT_DIR$/ggg.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="ee9a79d7-ed0e-4658-8d39-8bc5c92cca63" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,7 +41,9 @@
   &quot;associatedIndex&quot;: 2
 }</component>
   <component name="ProjectId" id="2zwsh1PeKGeKxephywaWaBUmkh4" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -60,6 +59,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "feature/update",
     "last_opened_file_path": "/Users/trien.tran/PycharmProjects/PlantClef",
+    "node.js.selected.package.tslint": "(autodetect)",
     "settings.editor.selected.configurable": "advanced.settings"
   }
 }]]></component>
