@@ -1,0 +1,107 @@
+{
+  "mobilenetv2_100": {
+    "model": "mobilenetv2_100",
+    "run_tag": "sobel_s44",
+    "preprocess": "sobel",
+    "seed": 44,
+    "num_classes": 2721,
+    "min_images_per_class": 25,
+    "split": {
+      "train": 210327,
+      "val": 46419,
+      "test": 46419,
+      "val_frac": 0.15,
+      "test_frac": 0.15
+    },
+    "params": 5709473,
+    "val_top1_best": 0.47247894181261985,
+    "test": {
+      "n": 46419,
+      "top1": 0.4746763178870721,
+      "top5": 0.6781059479954329,
+      "top10": 0.7449104892393201,
+      "macro_f1": 0.46017390959183985,
+      "weighted_f1": 0.470949758408684
+    },
+    "tflite_fp16_mb": 11.42,
+    "tflite_fp32_mb": 22.79,
+    "parity_top1_ok": null,
+    "train_runtime_s": 14817.377031326294,
+    "history_csv": "mobilenetv2_100_sobel_s44_history.csv",
+    "env": {
+      "torch": "2.6.0+cu124",
+      "gpu": "NVIDIA L40",
+      "python": "3.9.25"
+    }
+  },
+  "mobilevit_xxs": {
+    "model": "mobilevit_xxs",
+    "run_tag": "sobel_s44",
+    "preprocess": "sobel",
+    "seed": 44,
+    "num_classes": 2721,
+    "min_images_per_class": 25,
+    "split": {
+      "train": 210327,
+      "val": 46419,
+      "test": 46419,
+      "val_frac": 0.15,
+      "test_frac": 0.15
+    },
+    "params": 1824465,
+    "val_top1_best": 0.35584566664512374,
+    "test": {
+      "n": 46419,
+      "top1": 0.3566642969473707,
+      "top5": 0.574096813804692,
+      "top10": 0.6594497942652793,
+      "macro_f1": 0.33668329833656385,
+      "weighted_f1": 0.3482476727325138
+    },
+    "tflite_fp16_mb": 2.35,
+    "tflite_fp32_mb": 7.64,
+    "parity_top1_ok": null,
+    "train_runtime_s": 18507.075394153595,
+    "history_csv": "mobilevit_xxs_sobel_s44_history.csv",
+    "env": {
+      "torch": "2.6.0+cu124",
+      "gpu": "NVIDIA L40",
+      "python": "3.9.25"
+    }
+  },
+  "efficientformerv2_s0": {
+    "model": "efficientformerv2_s0",
+    "run_tag": "sobel_s44",
+    "preprocess": "sobel",
+    "seed": 44,
+    "num_classes": 2721,
+    "min_images_per_class": 25,
+    "split": {
+      "train": 210327,
+      "val": 46419,
+      "test": 46419,
+      "val_frac": 0.15,
+      "test_frac": 0.15
+    },
+    "params": 4209490,
+    "val_top1_best": 0.4811391886942847,
+    "test": {
+      "n": 46419,
+      "top1": 0.48415519507098387,
+      "top5": 0.6901699735022296,
+      "top10": 0.7568452573299727,
+      "macro_f1": 0.4713353910777228,
+      "weighted_f1": 0.48071046993546335
+    },
+    "tflite_fp16_mb": 8.72,
+    "tflite_fp32_mb": 17.31,
+    "parity_top1_ok": null,
+    "train_runtime_s": 22259.909504413605,
+    "history_csv": "efficientformerv2_s0_sobel_s44_history.csv",
+    "env": {
+      "torch": "2.6.0+cu124",
+      "gpu": "NVIDIA L40",
+      "python": "3.9.25"
+    }
+  }
+}

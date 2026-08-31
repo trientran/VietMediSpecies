@@ -1,0 +1,7 @@
+{
+  "run_tag": "sobel_s42",
+  "preprocess": "sobel",
+  "seed": 42,
+  "vit_model": "vit_base_patch16_224",
+  "vit_ceiling_top1": 0.6421508434046403
+}

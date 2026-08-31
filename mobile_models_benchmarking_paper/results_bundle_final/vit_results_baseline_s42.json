@@ -1,0 +1,37 @@
+{
+  "vit_base_patch16_224": {
+    "model": "vit_base_patch16_224",
+    "run_tag": "baseline_s42",
+    "preprocess": "baseline",
+    "seed": 42,
+    "num_classes": 2721,
+    "min_images_per_class": 25,
+    "split": {
+      "train": 210327,
+      "val": 46419,
+      "test": 46419,
+      "val_frac": 0.15,
+      "test_frac": 0.15
+    },
+    "params": 87891105,
+    "val_top1_best": 0.8489411663327516,
+    "test": {
+      "n": 46419,
+      "top1": 0.8466576186475365,
+      "top5": 0.9345095758202461,
+      "top10": 0.9503436092979168,
+      "macro_f1": 0.8380417624917602,
+      "weighted_f1": 0.8455683283007113
+    },
+    "tflite_fp16_mb": null,
+    "tflite_fp32_mb": null,
+    "parity_top1_ok": null,
+    "train_runtime_s": 39320.3454375267,
+    "history_csv": "vit_base_patch16_224_baseline_s42_history.csv",
+    "env": {
+      "torch": "2.6.0+cu124",
+      "gpu": "NVIDIA L40",
+      "python": "3.9.25"
+    }
+  }
+}

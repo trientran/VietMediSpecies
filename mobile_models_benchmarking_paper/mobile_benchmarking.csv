@@ -1,0 +1,19 @@
+Device,LiteRT Model,Metadata-emdeded Model size (MB),Cold Start Measurements (s),Cold Start Median (s),Median Latency (ms),Peak RAM (MB),Inferences per 1% Battery
+Xiaomi,mobilenetv2_100_baseline_s42_sm_float16_meta,11.4,"6.88, 7.31, 6.82, 7.68, 6.61",6.88,783.298542,318,3200
+Xiaomi,mobilenetv2_100_baseline_s42_sm_float32_meta,22.8,"6.91, 7.12, 6.96, 6.84, 6.77",6.91,878.870677,312.1,3100
+Xiaomi,efficientformerv2_s0_baseline_s42_sm_float16_meta,8.8,"7.63, 6.58, 6.87, 6.75, 7.69",6.87,5341.408018,343.1,900
+Xiaomi,efficientformerv2_s0_baseline_s42_sm_float32_meta,17.4,"6.84, 7.39, 6.94, 6.79, 6.65",6.84,5376.699686,335.1,900
+Xiaomi,mobilevit_xxs_baseline_s42_nhwc_float16_meta,2.4,"6.69, 6.89, 6.85, 6.72, 6.64",6.72,1266.207344,280.1,2300
+Xiaomi,mobilevit_xxs_baseline_s42_nhwc_float32_meta,7.7,"7.17, 7.25, 6.91, 6.77, 6.70",6.91,1584.871145,287.5,2000
+Realme,mobilenetv2_100_baseline_s42_sm_float16_meta,11.4,"9.61, 8.87, 10.18, 10.55, 9.75",9.75,1488.088614,305.8,2300
+Realme,mobilenetv2_100_baseline_s42_sm_float32_meta,22.8,"9.41, 9.98, 8.71, 9.31, 9.12",9.31,1414.41973,302.3,2400
+Realme,efficientformerv2_s0_baseline_s42_sm_float16_meta,8.8,"8.87, 9.22, 8.96, 9.43, 9.19",9.19,1272.535691,309.9,2600
+Realme,efficientformerv2_s0_baseline_s42_sm_float32_meta,17.4,"8.53, 9.14, 10.15, 9.08, 8.64",9.08,1309.386884,293.6,2500
+Realme,mobilevit_xxs_baseline_s42_nhwc_float16_meta,2.4,"8.65, 9.08, 8.89, 8.76, 9.16",8.89,1145.287922,306.6,2700
+Realme,mobilevit_xxs_baseline_s42_nhwc_float32_meta,7.7,"8.65, 9.11, 9.25, 9.17, 8.74",9.11,1508.243691,307.1,2300
+Oppo,mobilenetv2_100_baseline_s42_sm_float16_meta,11.4,"6.42, 6.73, 6.55, 6.38, 6.21",6.42,194.397812,283.4,2500
+Oppo,mobilenetv2_100_baseline_s42_sm_float32_meta,22.8,"6.72, 6.97, 6.63, 6.38, 6.29",6.63,197.660521,282.7,2500
+Oppo,efficientformerv2_s0_baseline_s42_sm_float16_meta,8.8,"6.36, 6.88, 6.54, 6.27, 6.22",6.36,188.146094,287.8,2400
+Oppo,efficientformerv2_s0_baseline_s42_sm_float32_meta,17.4,"6.47, 6.93, 6.61, 7.14, 6.55",6.61,200.189583,284.7,2500
+Oppo,mobilevit_xxs_baseline_s42_nhwc_float16_meta,2.4,"6.28, 6.85, 7.02, 6.35, 6.24",6.35,197.899427,285.1,2500
+Oppo,mobilevit_xxs_baseline_s42_nhwc_float32_meta,7.7,"6.43, 6.91, 6.57, 6.36, 6.38",6.43,193.288125,296.4,2500

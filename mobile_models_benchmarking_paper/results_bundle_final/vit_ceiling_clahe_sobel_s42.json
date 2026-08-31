@@ -1,0 +1,7 @@
+{
+  "run_tag": "clahe_sobel_s42",
+  "preprocess": "clahe_sobel",
+  "seed": 42,
+  "vit_model": "vit_base_patch16_224",
+  "vit_ceiling_top1": 0.8372002843663156
+}

@@ -1,0 +1,107 @@
+{
+  "mobilenetv2_100": {
+    "model": "mobilenetv2_100",
+    "run_tag": "clahe_s42",
+    "preprocess": "clahe",
+    "seed": 42,
+    "num_classes": 2721,
+    "min_images_per_class": 25,
+    "split": {
+      "train": 210327,
+      "val": 46419,
+      "test": 46419,
+      "val_frac": 0.15,
+      "test_frac": 0.15
+    },
+    "params": 5709473,
+    "val_top1_best": 0.6779336047739072,
+    "test": {
+      "n": 46419,
+      "top1": 0.6754777138671665,
+      "top5": 0.838342058208923,
+      "top10": 0.8806092332880933,
+      "macro_f1": 0.6657147357014257,
+      "weighted_f1": 0.6736924689852174
+    },
+    "tflite_fp16_mb": 11.42,
+    "tflite_fp32_mb": 22.79,
+    "parity_top1_ok": null,
+    "train_runtime_s": 28187.960835933685,
+    "history_csv": "mobilenetv2_100_clahe_s42_history.csv",
+    "env": {
+      "torch": "2.6.0+cu124",
+      "gpu": "NVIDIA L40",
+      "python": "3.9.25"
+    }
+  },
+  "mobilevit_xxs": {
+    "model": "mobilevit_xxs",
+    "run_tag": "clahe_s42",
+    "preprocess": "clahe",
+    "seed": 42,
+    "num_classes": 2721,
+    "min_images_per_class": 25,
+    "split": {
+      "train": 210327,
+      "val": 46419,
+      "test": 46419,
+      "val_frac": 0.15,
+      "test_frac": 0.15
+    },
+    "params": 1824465,
+    "val_top1_best": 0.5683879445916543,
+    "test": {
+      "n": 46419,
+      "top1": 0.5685602878131799,
+      "top5": 0.7720976324349943,
+      "top10": 0.831103642904845,
+      "macro_f1": 0.5528516729921517,
+      "weighted_f1": 0.56366866956554
+    },
+    "tflite_fp16_mb": 2.35,
+    "tflite_fp32_mb": 7.64,
+    "parity_top1_ok": null,
+    "train_runtime_s": 25592.594702482224,
+    "history_csv": "mobilevit_xxs_clahe_s42_history.csv",
+    "env": {
+      "torch": "2.6.0+cu124",
+      "gpu": "NVIDIA L40",
+      "python": "3.9.25"
+    }
+  },
+  "efficientformerv2_s0": {
+    "model": "efficientformerv2_s0",
+    "run_tag": "clahe_s42",
+    "preprocess": "clahe",
+    "seed": 42,
+    "num_classes": 2721,
+    "min_images_per_class": 25,
+    "split": {
+      "train": 210327,
+      "val": 46419,
+      "test": 46419,
+      "val_frac": 0.15,
+      "test_frac": 0.15
+    },
+    "params": 4209490,
+    "val_top1_best": 0.6859475645748508,
+    "test": {
+      "n": 46419,
+      "top1": 0.6848919623430061,
+      "top5": 0.8494797389000194,
+      "top10": 0.8897003382235722,
+      "macro_f1": 0.6716445311424234,
+      "weighted_f1": 0.6829090274404811
+    },
+    "tflite_fp16_mb": 8.72,
+    "tflite_fp32_mb": 17.31,
+    "parity_top1_ok": null,
+    "train_runtime_s": 25493.920177698135,
+    "history_csv": "efficientformerv2_s0_clahe_s42_history.csv",
+    "env": {
+      "torch": "2.6.0+cu124",
+      "gpu": "NVIDIA L40",
+      "python": "3.9.25"
+    }
+  }
+}
