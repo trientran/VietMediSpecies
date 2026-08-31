@@ -1,0 +1,88 @@
+OUT=/scratch/ttran72/checkpoints/REPRO_AND_FACTS.md
+CKPT=/scratch/ttran72/checkpoints
+PHD=/home/ttran72/venvs/phd/bin/python
+AIEDGE=/scratch/ttran72/venvs/aiedge/bin/python
+
+{
+echo "# Reproducibility & Facts — cloud-to-edge mobile plant benchmark"
+echo "_generated: $(date '+%F %T %Z') on $(hostname)_"
+echo
+
+echo "## Hardware / OS"
+echo '```'
+echo "GPU:"; nvidia-smi --query-gpu=name,memory.total,driver_version --format=csv,noheader
+echo "CPU cores (nproc): $(nproc)"
+echo "RAM: $(free -g | awk '/Mem/{print $2" GiB"}')"
+echo "OS: $(. /etc/os-release 2>/dev/null; echo "$PRETTY_NAME")"
+echo '```'
+echo
+
+echo "## Training venv (phd) — key package versions"
+echo '```'
+$PHD --version
+$PHD -m pip freeze 2>/dev/null | grep -iE '^(torch|torchvision|timm|numpy|scipy|scikit-learn|pillow|opencv|pandas)==' 
+echo '```'
+echo
+
+echo "## Conversion venv (aiedge) — pinned set (took real effort to resolve)"
+echo '```'
+$AIEDGE --version
+$AIEDGE -m pip freeze 2>/dev/null | grep -iE '^(torch|torchvision|litert-torch|ai-edge-torch|torchao|tensorflow|tensorflow-cpu|ai-edge-litert|jax|jaxlib)=='
+echo '```'
+echo
+
+echo "## Conversion invocation (the working recipe)"
+echo '```bash'
+echo "# onnx2tf half must run under an interpreter that HAS torch:"
+echo "TRAIN_PY=$PHD ./convert_all.sh"
+echo "# mobilevit half runs in the aiedge venv (script calls it explicitly):"
+echo "#   $AIEDGE export_mobilevit_litert.py --run-tag <tag> --models mobilevit_xxs"
+echo "# onnx2tf offline fix: dummy calibration_image_sample_data_20x128x128x3_float32.npy in CKPT_DIR"
+echo '```'
+echo
+
+echo "## Dataset / split facts (from a results file)"
+echo '```'
+$PHD -c "
+import json,glob,os
+f=sorted(glob.glob('$CKPT/results_baseline_s42.json'))[0]
+d=json.load(open(f)); m=next(iter(d.values()))
+for k in ['num_classes','min_images_per_class','split','seed','preprocess']:
+    print(k,'=',m.get(k))
+"
+echo '```'
+echo
+
+echo "## Model facts (params + tflite sizes, from results_baseline_s42.json)"
+echo '```'
+$PHD -c "
+import json
+d=json.load(open('$CKPT/results_baseline_s42.json'))
+for name,r in d.items():
+    print(f\"{name}: params={r.get('params'):,}  fp32={r.get('tflite_fp32_mb')}MB  fp16={r.get('tflite_fp16_mb')}MB\")
+"
+echo '```'
+echo
+
+echo "## ViT ceilings (per preprocess, seed 42)"
+echo '```'
+for c in $CKPT/vit_ceiling_*_s42.json; do
+  $PHD -c "import json;d=json.load(open('$c'));print(d.get('preprocess'),'val/test ceiling top1 =',round(d.get('vit_ceiling_top1',0),4))"
+done
+echo '```'
+echo
+
+echo "## Accuracy results (3-seed mean+/-std) — see preprocessing_comparison.csv"
+echo '```'
+cat $CKPT/preprocessing_comparison.csv 2>/dev/null
+echo '```'
+echo
+
+echo "## Significance (paired t-test / Wilcoxon) — see preprocessing_significance.csv"
+echo '```'
+cat $CKPT/preprocessing_significance.csv 2>/dev/null
+echo '```'
+} > "$OUT"
+
+echo "wrote $OUT"
+ls -la "$OUT"
