@@ -4,8 +4,170 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ee9a79d7-ed0e-4658-8d39-8bc5c92cca63" name="Changes" comment="Update workspace">
+    <list default="true" id="ee9a79d7-ed0e-4658-8d39-8bc5c92cca63" name="Changes" comment="Add terminal command to generate repro and facts">
+      <change afterPath="$PROJECT_DIR$/Resize.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/VietMediSpecies.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/VietMediSpecies.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/REPRO_AND_FACTS.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/mobile_benchmarking.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/notebooks_n_python_programs/01-full-vit.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/notebooks_n_python_programs/02-mobile-transformers.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/notebooks_n_python_programs/aggregate_preprocessing.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/notebooks_n_python_programs/convert_all.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/notebooks_n_python_programs/diagnose_tflite.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/notebooks_n_python_programs/export_mobilevit_litert.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/notebooks_n_python_programs/export_softmax_tflite.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/notebooks_n_python_programs/export_tflite.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/notebooks_n_python_programs/make_fig_preprocess_examples.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/notebooks_n_python_programs/make_labels.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/notebooks_n_python_programs/notify.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/notebooks_n_python_programs/parity_check_deployed.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/notebooks_n_python_programs/reexport_mobilevit_nhwc.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/notebooks_n_python_programs/run_grid.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/notebooks_n_python_programs/terminal_command_to_generate_repro_and_facts_md.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/notebooks_n_python_programs/write_metadata.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/efficientformerv2_s0_baseline_s42_history.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/efficientformerv2_s0_baseline_s42_tf/efficientformerv2_s0_baseline_s42_float16.tflite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/efficientformerv2_s0_baseline_s42_tf/efficientformerv2_s0_baseline_s42_float32.tflite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/efficientformerv2_s0_baseline_s43_history.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/efficientformerv2_s0_baseline_s43_tf/efficientformerv2_s0_baseline_s43_float16.tflite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/efficientformerv2_s0_baseline_s43_tf/efficientformerv2_s0_baseline_s43_float32.tflite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/efficientformerv2_s0_baseline_s44_history.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/efficientformerv2_s0_baseline_s44_tf/efficientformerv2_s0_baseline_s44_float16.tflite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/efficientformerv2_s0_baseline_s44_tf/efficientformerv2_s0_baseline_s44_float32.tflite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/efficientformerv2_s0_clahe_s42_history.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/efficientformerv2_s0_clahe_s42_tf/efficientformerv2_s0_clahe_s42_float16.tflite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/efficientformerv2_s0_clahe_s42_tf/efficientformerv2_s0_clahe_s42_float32.tflite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/efficientformerv2_s0_clahe_s43_history.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/efficientformerv2_s0_clahe_s43_tf/efficientformerv2_s0_clahe_s43_float16.tflite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/efficientformerv2_s0_clahe_s43_tf/efficientformerv2_s0_clahe_s43_float32.tflite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/efficientformerv2_s0_clahe_s44_history.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/efficientformerv2_s0_clahe_s44_tf/efficientformerv2_s0_clahe_s44_float16.tflite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/efficientformerv2_s0_clahe_s44_tf/efficientformerv2_s0_clahe_s44_float32.tflite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/efficientformerv2_s0_clahe_sobel_s42_history.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/efficientformerv2_s0_clahe_sobel_s42_tf/efficientformerv2_s0_clahe_sobel_s42_float16.tflite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/efficientformerv2_s0_clahe_sobel_s42_tf/efficientformerv2_s0_clahe_sobel_s42_float32.tflite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/efficientformerv2_s0_clahe_sobel_s43_history.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/efficientformerv2_s0_clahe_sobel_s43_tf/efficientformerv2_s0_clahe_sobel_s43_float16.tflite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/efficientformerv2_s0_clahe_sobel_s43_tf/efficientformerv2_s0_clahe_sobel_s43_float32.tflite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/efficientformerv2_s0_clahe_sobel_s44_history.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/efficientformerv2_s0_clahe_sobel_s44_tf/efficientformerv2_s0_clahe_sobel_s44_float16.tflite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/efficientformerv2_s0_clahe_sobel_s44_tf/efficientformerv2_s0_clahe_sobel_s44_float32.tflite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/efficientformerv2_s0_sobel_s42_history.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/efficientformerv2_s0_sobel_s42_tf/efficientformerv2_s0_sobel_s42_float16.tflite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/efficientformerv2_s0_sobel_s42_tf/efficientformerv2_s0_sobel_s42_float32.tflite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/efficientformerv2_s0_sobel_s43_history.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/efficientformerv2_s0_sobel_s43_tf/efficientformerv2_s0_sobel_s43_float16.tflite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/efficientformerv2_s0_sobel_s43_tf/efficientformerv2_s0_sobel_s43_float32.tflite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/efficientformerv2_s0_sobel_s44_history.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/efficientformerv2_s0_sobel_s44_tf/efficientformerv2_s0_sobel_s44_float16.tflite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/efficientformerv2_s0_sobel_s44_tf/efficientformerv2_s0_sobel_s44_float32.tflite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/mobilenetv2_100_baseline_s42_history.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/mobilenetv2_100_baseline_s42_tf/mobilenetv2_100_baseline_s42_float16.tflite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/mobilenetv2_100_baseline_s42_tf/mobilenetv2_100_baseline_s42_float32.tflite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/mobilenetv2_100_baseline_s43_history.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/mobilenetv2_100_baseline_s43_tf/mobilenetv2_100_baseline_s43_float16.tflite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/mobilenetv2_100_baseline_s43_tf/mobilenetv2_100_baseline_s43_float32.tflite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/mobilenetv2_100_baseline_s44_history.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/mobilenetv2_100_baseline_s44_tf/mobilenetv2_100_baseline_s44_float16.tflite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/mobilenetv2_100_baseline_s44_tf/mobilenetv2_100_baseline_s44_float32.tflite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/mobilenetv2_100_clahe_s42_history.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/mobilenetv2_100_clahe_s42_tf/mobilenetv2_100_clahe_s42_float16.tflite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/mobilenetv2_100_clahe_s42_tf/mobilenetv2_100_clahe_s42_float32.tflite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/mobilenetv2_100_clahe_s43_history.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/mobilenetv2_100_clahe_s43_tf/mobilenetv2_100_clahe_s43_float16.tflite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/mobilenetv2_100_clahe_s43_tf/mobilenetv2_100_clahe_s43_float32.tflite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/mobilenetv2_100_clahe_s44_history.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/mobilenetv2_100_clahe_s44_tf/mobilenetv2_100_clahe_s44_float16.tflite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/mobilenetv2_100_clahe_s44_tf/mobilenetv2_100_clahe_s44_float32.tflite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/mobilenetv2_100_clahe_sobel_s42_history.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/mobilenetv2_100_clahe_sobel_s42_tf/mobilenetv2_100_clahe_sobel_s42_float16.tflite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/mobilenetv2_100_clahe_sobel_s42_tf/mobilenetv2_100_clahe_sobel_s42_float32.tflite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/mobilenetv2_100_clahe_sobel_s43_history.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/mobilenetv2_100_clahe_sobel_s43_tf/mobilenetv2_100_clahe_sobel_s43_float16.tflite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/mobilenetv2_100_clahe_sobel_s43_tf/mobilenetv2_100_clahe_sobel_s43_float32.tflite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/mobilenetv2_100_clahe_sobel_s44_history.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/mobilenetv2_100_clahe_sobel_s44_tf/mobilenetv2_100_clahe_sobel_s44_float16.tflite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/mobilenetv2_100_clahe_sobel_s44_tf/mobilenetv2_100_clahe_sobel_s44_float32.tflite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/mobilenetv2_100_sobel_s42_history.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/mobilenetv2_100_sobel_s42_tf/mobilenetv2_100_sobel_s42_float16.tflite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/mobilenetv2_100_sobel_s42_tf/mobilenetv2_100_sobel_s42_float32.tflite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/mobilenetv2_100_sobel_s43_history.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/mobilenetv2_100_sobel_s43_tf/mobilenetv2_100_sobel_s43_float16.tflite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/mobilenetv2_100_sobel_s43_tf/mobilenetv2_100_sobel_s43_float32.tflite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/mobilenetv2_100_sobel_s44_history.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/mobilenetv2_100_sobel_s44_tf/mobilenetv2_100_sobel_s44_float16.tflite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/mobilenetv2_100_sobel_s44_tf/mobilenetv2_100_sobel_s44_float32.tflite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/mobilevit_xxs_baseline_s42_float16.tflite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/mobilevit_xxs_baseline_s42_float32.tflite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/mobilevit_xxs_baseline_s42_history.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/mobilevit_xxs_baseline_s43_float16.tflite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/mobilevit_xxs_baseline_s43_float32.tflite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/mobilevit_xxs_baseline_s43_history.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/mobilevit_xxs_baseline_s44_float16.tflite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/mobilevit_xxs_baseline_s44_float32.tflite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/mobilevit_xxs_baseline_s44_history.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/mobilevit_xxs_clahe_s42_float16.tflite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/mobilevit_xxs_clahe_s42_float32.tflite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/mobilevit_xxs_clahe_s42_history.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/mobilevit_xxs_clahe_s43_float16.tflite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/mobilevit_xxs_clahe_s43_float32.tflite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/mobilevit_xxs_clahe_s43_history.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/mobilevit_xxs_clahe_s44_float16.tflite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/mobilevit_xxs_clahe_s44_float32.tflite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/mobilevit_xxs_clahe_s44_history.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/mobilevit_xxs_clahe_sobel_s42_float16.tflite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/mobilevit_xxs_clahe_sobel_s42_float32.tflite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/mobilevit_xxs_clahe_sobel_s42_history.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/mobilevit_xxs_clahe_sobel_s43_float16.tflite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/mobilevit_xxs_clahe_sobel_s43_float32.tflite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/mobilevit_xxs_clahe_sobel_s43_history.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/mobilevit_xxs_clahe_sobel_s44_float16.tflite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/mobilevit_xxs_clahe_sobel_s44_float32.tflite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/mobilevit_xxs_clahe_sobel_s44_history.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/mobilevit_xxs_sobel_s42_float16.tflite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/mobilevit_xxs_sobel_s42_float32.tflite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/mobilevit_xxs_sobel_s42_history.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/mobilevit_xxs_sobel_s43_float16.tflite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/mobilevit_xxs_sobel_s43_float32.tflite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/mobilevit_xxs_sobel_s43_history.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/mobilevit_xxs_sobel_s44_float16.tflite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/mobilevit_xxs_sobel_s44_float32.tflite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/mobilevit_xxs_sobel_s44_history.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/preprocessing_comparison.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/preprocessing_comparison.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/preprocessing_comparison.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/preprocessing_significance.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/results_baseline_s42.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/results_baseline_s43.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/results_baseline_s44.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/results_clahe_s42.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/results_clahe_s43.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/results_clahe_s44.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/results_clahe_sobel_s42.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/results_clahe_sobel_s43.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/results_clahe_sobel_s44.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/results_sobel_s42.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/results_sobel_s43.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/results_sobel_s44.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/tflite models with embedded metadata/efficientformerv2_s0_baseline_s42_sm_float16_meta.tflite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/tflite models with embedded metadata/efficientformerv2_s0_baseline_s42_sm_float32_meta.tflite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/tflite models with embedded metadata/mobilenetv2_100_baseline_s42_sm_float16_meta.tflite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/tflite models with embedded metadata/mobilenetv2_100_baseline_s42_sm_float32_meta.tflite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/tflite models with embedded metadata/mobilevit_xxs_baseline_s42_nhwc_float16_meta.tflite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/tflite models with embedded metadata/mobilevit_xxs_baseline_s42_nhwc_float32_meta.tflite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/vit_base_patch16_224_baseline_s42_history.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/vit_base_patch16_224_clahe_s42_history.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/vit_base_patch16_224_sobel_s42_history.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/vit_ceiling_baseline_s42.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/vit_ceiling_clahe_s42.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/vit_ceiling_clahe_sobel_s42.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/vit_ceiling_sobel_s42.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/vit_results_baseline_s42.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/vit_results_clahe_s42.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/vit_results_clahe_sobel_s42.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobile_models_benchmarking_paper/results_bundle_final/vit_results_sobel_s42.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +217,7 @@
     &quot;Python.Chart_Forgetting_Curves_IIL.executor&quot;: &quot;Run&quot;,
     &quot;Python.Chart_WebConf_Pipeline.executor&quot;: &quot;Run&quot;,
     &quot;Python.Convert_keras_to_tflite.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Resize.executor&quot;: &quot;Run&quot;,
     &quot;Python.Temp.executor&quot;: &quot;Run&quot;,
     &quot;Python.calculate_statistics.executor&quot;: &quot;Run&quot;,
     &quot;Python.convert_to_tflite.executor&quot;: &quot;Run&quot;,
@@ -159,7 +322,6 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-a71380e98a7c-JavaScript-PY-252.28539.90" />
         <option value="bundled-python-sdk-116fdca60d1a-968fe969f28a-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-252.28539.90" />
       </set>
     </attachedChunks>
@@ -175,7 +337,9 @@
       <workItem from="1770134728769" duration="6707000" />
       <workItem from="1770342646080" duration="6324000" />
       <workItem from="1772632985527" duration="4229000" />
-      <workItem from="1788170300088" duration="807000" />
+      <workItem from="1788170300088" duration="7595000" />
+      <workItem from="1790090414768" duration="3000" />
+      <workItem from="1790090645309" duration="8000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <option name="closed" value="true" />
@@ -225,7 +389,15 @@
       <option name="project" value="LOCAL" />
       <updated>1788169378187</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Add terminal command to generate repro and facts">
+      <option name="closed" value="true" />
+      <created>1788175603354</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1788175603354</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -260,7 +432,8 @@
     <MESSAGE value="Remove DownloadVideos.py" />
     <MESSAGE value="Add mobile_benchmarking_paper" />
     <MESSAGE value="Update workspace" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update workspace" />
+    <MESSAGE value="Add terminal command to generate repro and facts" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add terminal command to generate repro and facts" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/VietMediSpecies2025$Convert_keras_to_tflite.coverage" NAME="Convert_keras_to_tflite Coverage Results" MODIFIED="1770343740057" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
